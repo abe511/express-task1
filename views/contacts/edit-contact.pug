@@ -1,0 +1,18 @@
+head
+  link(rel="stylesheet", href="../../stylesheets/style.css")
+
+block content
+  - const path = `/contacts/edit/${id}`;
+  h1.header= title
+  form.form-contact(action=path method="post")
+    label(for="name") Name:
+    br
+    input.input-name(type="text" name="name" value=name)
+    br
+    label(for="phone") Phone:
+    br
+    input.input-phone(type="text" name="phone" value=phone)
+    br
+    input.btn-save-contact(type="submit" name="_method" value="Save")
+    input.btn-cancel-contact(type="button" value="Cancel" onclick="history.back()")
+    input.btn-save-contact(type="submit" name="_method" value="Delete")

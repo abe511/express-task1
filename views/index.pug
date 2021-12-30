@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1.header= title
+  a.link-new-contact(href="/contacts/new") Add Contact
+
+  ul
+    include ./contacts/contact
+    for entry in list
+      +contact(entry._id, entry.name, entry.phone)

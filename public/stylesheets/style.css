@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a, button{
+  color: rgb(39, 128, 58);
+  background-color: rgb(213, 241, 213);
+  padding: .5rem;
+  margin: .5rem;
+  text-decoration: none;
+  border: solid 1px rgb(16, 133, 16);
+  border-radius: 0.5rem;
+}
+
+button{
+  color: rgb(39, 128, 58);
+  background-color: rgb(213, 241, 213);
+  padding: .5rem;
+  margin: .5rem;
+  text-decoration: none;
+  border: solid 1px rgb(16, 133, 16);
+  border-radius: 0.5rem;
+}
+
+.link-edit-contact {
+  color: rgb(122, 128, 39);
+  background-color: rgb(234, 241, 213);
+  border: solid 1px rgb(133, 131, 16);
+}
+
+.link-delete-contact {
+  color: rgb(128, 45, 39);
+  background-color: rgb(241, 215, 213);
+  border: solid 1px rgb(133, 24, 16);
+}
+
+ul {
+  margin: 1rem 0 1rem 0;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid green;
+  justify-content: space-between;
+}
+
+a:hover, button:hover {
+  background-color: rgb(213, 224, 206);
+}
+
+a:active, button:active {
+  background-color: rgb(233, 248, 229);
+}
+
+.link-edit-contact:hover {
+  background-color: rgb(222, 224, 206);
+}
+
+.link-edit-contact:active {
+  background-color: rgb(241, 248, 229);
+}
+
+.link-delete-contact:hover {
+  background-color: rgb(224, 209, 206);
+}
+
+.link-delete-contact:active {
+  background-color: rgb(248, 231, 229);
+}
+
+
+.info-container, .button-container {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+}
+
+.link-new-contact {
+  margin: 1rem 0 1rem 0;
+}
+
+
+
+p.name, p.phone {
+  margin: 1rem;
+}
+
+.field-name, .field-phone {
+  margin: 1rem;
+  font-weight: bold;
+}

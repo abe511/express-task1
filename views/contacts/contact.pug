@@ -1,0 +1,11 @@
+mixin contact(id, name, phone)
+    - const path = `/contacts/edit/${id}`;
+    li.contact
+        div.info-container
+            p.name Name:
+                span.field-name= name
+            p.phone Phone:
+                span.field-phone= phone
+        div.button-container
+            a.link-edit-contact(href=path) Edit
+            a.link-delete-contact(href=path+"?delete=true") Delete
